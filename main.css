@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  background-color: rgb(255, 238, 139);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-indent: 30px;
+  margin-top: 10vh;
+}
+
+.side a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.content {
+  background-color: darkgray;
+  margin-left: 30%;
+  margin-top: 50px;
+  padding: 1px 15px;
+  padding-bottom: 10px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  /*.sidebar a {float: left;}*/
+  div.content {
+    margin-left: 20px;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    height: 100%;
+    text-align: center;
+    margin-right: 0px;
+  }
+}
+
+#myname {
+  margin: 45px;
+  /* margin-top: 240px; */
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: rgb(250, 248, 224);
+  color: rgba(116, 108, 235, 0.904);
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: serif;
+  text-align: center;
+}
+
+#myname div {
+  position: relative;
+  top: 80px;
+  left: -20px;
+}
+
+#maticon {
+  color: rgb(9, 9, 10);
+  font-size: 22px;
+}
+
+#button {
+  margin: 66px;
+  margin-top: 0;
+  background-color: dodgerblue;
+  box-shadow: black;
+  height: 40px;
+  color: white;
+}
+
+.about {
+  background-color: rgb(202, 248, 202);
+  color: midnightblue;
+  padding: 5px;
+  height: 38px;
+  width: 300px;
+  font-weight: bolder;
+  font-size: 18px;
+  outline-style: ridge;
+  outline-width: 3px;
+  outline-color: rgb(255, 210, 225);
+  outline-offset: 3px;
+  text-align: center;
+  margin: 10px;
+}
+
+#text {
+  display: inline-block;
+  border-radius: 10px 10px;
+  background-color: rgb(252, 232, 232);
+  color: rgb(42, 79, 148);
+  padding: 3px;
+  font-size: 22px;
+  font-family: serif;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+#skills {
+  width: 75px;
+  height: 75px;
+  border-radius: 80%;
+  background-color: lightsteelblue;
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.flex-container > div {
+  background-color: #e7d1c7;
+  width: 205px;
+  margin: 52px;
+  text-align: center;
+  line-height: 125px;
+  font-size: 30px;
+  font-family: serif;
+  letter-spacing: 3px;
+  border-radius: 20px 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
